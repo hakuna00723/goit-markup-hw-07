@@ -123,20 +123,24 @@ img {
 .header-container {
   display: flex;
 }
-.header-logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
+.logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: var(--dark-logo-cl);
-}
-.logo-part {
   color: var(--blue-cl);
 }
+.logo-part-dark {
+  color: var(--dark-logo-cl);
+}
+
+.header-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
 .main-nav {
   margin-right: auto;
 }
@@ -467,14 +471,12 @@ img {
   margin-right: 70px;
 }
 
-.footer-logo {
+.footer-link {
   display: block;
   margin-bottom: 20px;
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
+}
+
+.logo-part-light {
   color: var(--light-txt-cl);
 }
 
