@@ -763,6 +763,11 @@ img {
   cursor: pointer;
 }
 
+.modal-btn-icon:hover,
+.modal-btn-icon:focus {
+  fill: var(--blue-cl);
+}
+
 .register-form-title {
   display: block;
   font-weight: 700;
