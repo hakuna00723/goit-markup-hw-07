@@ -761,11 +761,13 @@ img {
   border-radius: 50%;
   border: 1px solid var(--modal-btn-brdr);
   cursor: pointer;
+  -webkit-transition: fill var(--animation), border-color var(--animation);
+  transition: fill var(--animation), border-color var(--animation);
 }
-
-.modal-btn-icon:hover,
-.modal-btn-icon:focus {
+.modal-btn:hover, .modal-btn:focus {
   fill: var(--blue-cl);
+  border-color: var(--blue-cl);
+  outline: transparent;
 }
 
 .register-form-title {

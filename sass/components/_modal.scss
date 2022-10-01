@@ -48,9 +48,13 @@
   border: 1px solid var(--modal-btn-brdr);
 
   cursor: pointer;
-}
 
-.modal-btn-icon:hover,
-.modal-btn-icon:focus {
-  fill: var(--blue-cl);
+  transition: fill var(--animation), border-color var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--blue-cl);
+    border-color: var(--blue-cl);
+    outline: transparent;
+  }
 }
