@@ -7,18 +7,19 @@
 @import './base/reset';
 
 // layouts styles
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/functions';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/page-portfolio';
+@import './layouts/footer';
 
 // components styles
-@import './components/section';
 @import './components/container';
+@import './components/section';
 @import './components/logo';
-@import './components/header';
-@import './components/hero';
-@import './components/features';
-@import './components/functions';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
+@import './components/socials';
 @import './components/modal';
 @import './components/register-form';
-@import './components/page-portfolio';
