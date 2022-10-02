@@ -8,12 +8,11 @@
 }
 
 .features__bg-box {
-  display: flex;
+  @include flex(flex, center, center);
   height: 120px;
   background: var(--grey-background-cl);
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
+
   margin-bottom: 30px;
 }
 

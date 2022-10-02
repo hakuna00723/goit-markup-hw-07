@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--grey-background-cl);
+  @include section(94px, 94px, var(--grey-background-cl));
 }
 
 .team__title {
