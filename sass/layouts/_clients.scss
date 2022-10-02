@@ -1,4 +1,7 @@
-.clients-title {
+.clients {
+  @include section(94px, 94px, null);
+}
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -6,16 +9,16 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.clients-list {
+.clients__list {
   @include list(center, center, null, null, flex, var(--gap));
 }
 
-.clients-list-item {
+.clients__list-item {
   @include item(5, var(--gap), 6);
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   color: var(--gray-icon);
   border: 1px solid var(--gray-icon);
@@ -34,6 +37,6 @@
   }
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }

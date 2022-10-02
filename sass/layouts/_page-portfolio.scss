@@ -1,3 +1,7 @@
+.gallery {
+  @include section(94px, 94px, null);
+}
+
 /* Radio Buttons */
 .btn {
   border-radius: 4px;
@@ -6,14 +10,14 @@
   min-height: 38px;
 }
 
-.gallery-btn {
+.gallery__btn-list {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.gallery .btn {
+.btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -36,17 +40,17 @@
 }
 
 /* Gallery Cards */
-.gallery-list {
+.gallery__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.gallery-list-item {
+.gallery__list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-.gallery-link {
+.gallery__link {
   display: inline-block;
   cursor: pointer;
 
@@ -58,18 +62,18 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:hover .overlay,
-  &:focus .overlay {
+  &:hover .gallery__overlay,
+  &:focus .gallery__overlay {
     transform: translateY(0);
   }
 }
 
-.gallery-thumb {
+.gallery__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.gallery__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,7 +93,7 @@
   transition: transform var(--animation);
 }
 
-.overlay-desc {
+.gallery__overlay-desc {
   font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
@@ -97,13 +101,13 @@
   color: var(--light-txt-cl);
 }
 
-.gallery-txt {
+.gallery__txt {
   padding: 20px 24px;
   border: 1px solid var(--cards-brdr-cl);
   border-top: none;
 }
 
-.gallery-title {
+.gallery__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -111,7 +115,7 @@
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
 }
-.gallery-subtitle {
+.gallery__subtitle {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
